@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CricGen</title>
+    <link rel="shortcut icon" href="images/titlelogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+       body { color: #ccc }
+.footer-widget p {
+    margin-bottom: 27px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+   .animate-border {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: #007bff; }
+
+.animate-border:after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  -webkit-animation: animborder 2s linear infinite;
+  animation: animborder 2s linear infinite; }
+
+@-webkit-keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px); } }
+
+@keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px); } }
+
+.animate-border.border-white:after {
+  border-color: #fff; }
+
+.animate-border.border-yellow:after {
+  border-color: #F5B02E; }
+
+.animate-border.border-orange:after {
+  border-right-color: #007bff;
+  border-left-color: #007bff; }
+
+.animate-border.border-ash:after {
+  border-right-color: #EEF0EF;
+  border-left-color: #EEF0EF; }
+
+.animate-border.border-offwhite:after {
+  border-right-color: #F7F9F8;
+  border-left-color: #F7F9F8; }
+
+/* Animated heading border */
+@keyframes primary-short {
+  0% {
+    width: 15%; }
+  50% {
+    width: 90%; }
+  100% {
+    width: 10%; } }
+
+@keyframes primary-long {
+  0% {
+    width: 80%; }
+  50% {
+    width: 0%; }
+  100% {
+    width: 80%; } } 
+
+.dk-footer {
+  padding: 75px 0 0;
+  background-color: #151414;
+  position: relative;
+  margin-top:5rem;
+  z-index: 2; }
+  .dk-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 80px; }
+    .dk-footer .contact-us .contact-info {
+      margin-left: 50px; }
+    .dk-footer .contact-us.contact-us-last {
+      margin-left: -80px; }
+  .dk-footer .contact-icon i {
+    font-size: 24px;
+    top: -15px;
+    position: relative;
+    color:#007bff; }
+
+.dk-footer-box-info {
+  position: absolute;
+  top: -122px;
+  background: #202020;
+  padding: 40px;
+  z-index: 2; }
+  .dk-footer-box-info .footer-social-link h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .dk-footer-box-info .footer-social-link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .dk-footer-box-info .footer-social-link li {
+    display: inline-block; }
+  .dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff; }
+    .dk-footer-box-info .footer-social-link a i.fa-facebook {
+      background-color: #3B5998; }
+    .dk-footer-box-info .footer-social-link a i.fa-twitter {
+      background-color: #55ACEE; }
+    .dk-footer-box-info .footer-social-link a i.fa-google-plus {
+      background-color: #DD4B39; }
+    .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+      background-color: #0976B4; }
+    .dk-footer-box-info .footer-social-link a i.fa-instagram {
+      background-color: #B7242A; }
+
+.footer-awarad {
+  margin-top: 285px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer-awarad p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+    padding-top: 15px; }
+
+.footer-info-text {
+  margin: 26px 0 32px; }
+
+.footer-left-widget {
+  padding-left: 80px; }
+
+.footer-widget .section-heading {
+  margin-bottom: 35px; }
+
+.footer-widget h3 {
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 15px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content; }
+
+.footer-widget ul {
+  width: 50%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer-widget li {
+  margin-bottom: 18px; }
+
+.footer-widget p {
+  margin-bottom: 27px; }
+
+.footer-widget a {
+  color: #878787;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .footer-widget a:hover {
+    color: #007bff; }
+
+.footer-widget:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.dk-footer-form {
+  position: relative; }
+  .dk-footer-form input[type=email] {
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E; }
+  .dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::-webkit-input-placeholder {
+    color: #878787;
+    font-size: 14px; }
+  .dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::placeholder {
+    color: #878787;
+    font-size: 14px; }
+  .dk-footer-form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff; }
+  .dk-footer-form button:hover {
+    cursor: pointer; }
+
+/* ==========================
+
+    Contact
+
+=============================*/
+.contact-us {
+  position: relative;
+  z-index: 2;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-icon {
+  position: absolute; }
+  .contact-icon i {
+    font-size: 36px;
+    top: -5px;
+    position: relative;
+    color: #007bff; }
+
+.contact-info {
+  margin-left: 75px;
+  color: #fff; }
+  .contact-info h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0; }
+
+.copyright {
+  padding: 28px 0;
+  margin-top: 55px;
+  background-color: #202020; }
+  .copyright span,
+  .copyright a {
+    color: #878787;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .copyright a:hover {
+    color:#007bff; }
+
+.copyright-menu ul {
+  text-align: right;
+  margin: 0; }
+
+.copyright-menu li {
+  display: inline-block;
+  padding-left: 20px; }
+
+.back-to-top {
+  position: relative;
+  z-index: 2; }
+  .back-to-top .btn-dark {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 999;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .back-to-top .btn-dark:hover {
+      cursor: pointer;
+      background: #FA6742;
+      border-color: #FA6742; }
+      
+  /* Credit to https://bootsnipp.com/snippets/ooa9M  */     
+</style>
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <header>
+      <nav class="navbar1">
+        <ul class="navbox">
+            <li>
+                <img class="logoimg" src="images/logo.jpeg" alt="">
+            </li>
+            <li>
+                <a href="#livescore" target="_blank">Live Score</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#schedule" >Schedule</a>
+            </li>
+            <li>
+                <a href="teams.html">Teams</a>
+            </li>
+            <li>
+                <a href="#videos">Videos</a>
+            </li>
+            <li>
+                <!-- <a href="#ranking">Ranking</a> -->
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Ranking</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#teams" classs="teamranking">ICC Teams Ranking</a>
+                    <a href="#batting">ICC Batting Ranking</a>
+                    <a href="#bowling">ICC Bowling Ranking</a>
+                  </div>
+                </div>
+                
+            </li>
+            <li>
+                <a href="#dk-footer">About Us</a>
+            </li>
+            <li>
+              <a href="#loginform">Login/Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+    
+  
+    </header>
+    
+    <main class="main">
+      <video class="cover_video" controls autoplay muted >
+        <source src="movie1.mp4" type="video/mp4">
+        <source src="movie1.mp4" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+      <div class="schedule" id="schedule">
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 1 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+            </div>
+            
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 2 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/eng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/af.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 3 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 4 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 5 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 6 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/sa.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 7 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 8 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/eng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 9 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/af.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 10 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/sa.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 11 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 12 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 13 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/af.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 14 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/eng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 15 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 16 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 17 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 18 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 19 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/sa.jpg" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 20 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 21 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/af.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 22 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/eng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 23 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 24 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/uaeimg.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 25 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 26 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/sa.jpg" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 27 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/nz.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 28 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/aus.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/af.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 29 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/eng.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/wi.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 30 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/sa.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="boxspan">Group stage T20 31 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/bang.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 32 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/slpng.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxspan">Group stage T20 33 of 33</div>
+            <div class="matches">
+              <div class="img1">
+                <img src="images/in.jpg" class="flagimg" alt="">
+              </div>
+              <span>Vs</span>
+              <div class="img2">
+                <img src="images/pak.png" class="flagimg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </main>
+    
+    <div class="allvideos" id="videos">
+      <h2 class="videoheading">Featured Videos</h2>
+      <div class="row">
+          <div class="box">
+            <!-- <div class="boxspan">Group stage T20 43 of 33</div> -->
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/8b0ubLO2MUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/ReEiUUUDIEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/-dj78ujs4ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/x4yAsCeLQZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/-dj78ujs4ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/pFbBUcR7GGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/mEOBGY4-7JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/8b0ubLO2MUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/krhWwNKuUrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/hbyru7Km8Qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/L6TYFyDm5Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="box">
+            <iframe width="300" height="147" src="https://www.youtube.com/embed/8b0ubLO2MUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <h2 class="rankhead textset" id="batting">ICC T20 Cricket Rankings - Men's Batting</h2>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Player</th>
+            <th scope="col">Country</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mohammad Rizwan</td>
+            <td>PAKISTAN</td>
+            <td>854</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Suryakumar Yadav</td>
+            <td>INDIA</td>
+            <td>838</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Babar Azam</td>
+            <td>PAKISTAN</td>
+            <td>801</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Aiden Markram</td>
+            <td>SOUTH AFRICA</td>
+            <td>777</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Dawid Malan</td>
+            <td>ENGLAND</td>
+            <td>733</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Aaron Finch</td>
+            <td>AUSTRALIA</td>
+            <td>707</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Devon Conway</td>
+            <td>NEW ZEALAND</td>
+            <td>683</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Pathum Nissanka</td>
+            <td>SRI LANKA</td>
+            <td>677</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Muhammad Waseem</td>
+            <td>UNITED ARAB EMIRATES</td>
+            <td>636</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Martin Guptill</td>
+            <td>NEW ZEALAND</td>
+            <td>628</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <h2 class="rankhead textset" id="bowling">ICC T20 Cricket Rankings - Men's Bowling</h2>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Player</th>
+            <th scope="col">Country</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Josh Hazlewood</td>
+            <td>AUSTRALIA</td>
+            <td>737</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Rashid Khan</td>
+            <td>AFGHANISTAN</td>
+            <td>696</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Wanindu Hasaranga</td>
+            <td>SRI LANKA</td>
+            <td>692</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Adam Zampa</td>
+            <td>AUSTRALIA</td>
+            <td>691</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Tabraiz Shamsi</td>
+            <td>SOUTH AFRICA</td>
+            <td>688</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Adil Rashid</td>
+            <td>ENGLAND</td>
+            <td>685</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Maheesh Theekshana</td>
+            <td>SRI LANKA</td>
+            <td>680</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Mujeeb Ur Rahman</td>
+            <td>AFGHANISTAN</td>
+            <td>677</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Akeal Hosein</td>
+            <td>WEST INDIES</td>
+            <td>665</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Keshav Maharaj</td>
+            <td>SOUTH AFRICA</td>
+            <td>662</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="Ranking textset" id="teams">
+          <h2 class="rankhead">ICC T20 Cricket Rankings - Men's Teams</h2>
+          <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Team</th>
+                  <th scope="col">Rating</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>INDIA</td>
+                  <td>268</td>
+                  <td>14760</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>ENGLAND</td>
+                  <td>263</td>
+                  <td>11063</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>PAKISTAN</td>
+                  <td>259</td>
+                  <td>11636</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>SOUTH AFRICA</td>
+                  <td>258</td>
+                  <td>9544</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>NEW ZEALAND</td>
+                  <td>252</td>
+                  <td>10075</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>AUSTRALIA</td>
+                  <td>251</td>
+                  <td>10554</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>WEST INDIES</td>
+                  <td>239</td>
+                  <td>11494</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>SRI LANKA</td>
+                  <td>237</td>
+                  <td>9964</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>BANGLADESH</td>
+                  <td>223</td>
+                  <td>9810</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>AFGHANISTAN</td>
+                  <td>219</td>
+                  <td>5919</td>
+                </tr>
+              </tbody>
+            </table>
+</div>
+
+
+    <!--  -->
+    
+    <footer id="dk-footer" class="dk-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-lg-4">
+                  <div class="dk-footer-box-info">
+                      <a href="index.html" class="footer-logo">
+                          <img src="images/titlelogo.png" alt="footer_logo" class="img-fluid sizing">
+                      </a>
+                      <p class="footer-info-text">
+                         Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                      </p>
+                      <div class="footer-social-link">
+                          <h3>Follow us</h3>
+                          <ul>
+                              <li>
+                                  <a href="#">
+                                      <i class="fa fa-facebook"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <i class="fa fa-twitter"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" target="_blank">
+                                      <i class="fa fa-google-plus"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.linkedin.com/in/tushar-arora-20022001" target="_blank">
+                                      <i class="fa fa-linkedin"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://instagram.com/aroratushar346?igshid=YmMyMTA2M2Y=" target="_blank">
+                                      <i class="fa fa-instagram"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- End Social link -->
+                  </div>
+                  <!-- End Footer info -->
+                  <div class="footer-awarad">
+                      <img src="images/icon/best.png" alt="">
+                      <p>CricGen 2022</p>
+                  </div>
+              </div>
+              <!-- End Col -->
+              <div class="col-md-12 col-lg-8">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="contact-us">
+                              <div class="contact-icon">
+                                  <i class="fa fa-map-o" aria-hidden="true"></i>
+                              </div>
+                              <!-- End contact Icon -->
+                              <div class="contact-info">
+                                  <h3>BPIT Rithala</h3>
+                                  <!-- <p>5353 Road Avenue</p> -->
+                              </div>
+                              <!-- End Contact Info -->
+                          </div>
+                          <!-- End Contact Us -->
+                      </div>
+                      <!-- End Col -->
+                      <div class="col-md-6">
+                          <div class="contact-us contact-us-last">
+                              <div class="contact-icon">
+                                  <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                              </div>
+                              <!-- End contact Icon -->
+                              <div class="contact-info">
+                                  <h3>93116 3394</h3>
+                                  <p>Give us a call</p>
+                              </div>
+                              <!-- End Contact Info -->
+                          </div>
+                          <!-- End Contact Us -->
+                      </div>
+                      <!-- End Col -->
+                  </div>
+                  <!-- End Contact Row -->
+                  <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                          <div class="footer-widget footer-left-widget">
+                              <div class="section-heading">
+                                  <h3>Useful Links</h3>
+                                  <span class="animate-border border-black"></span>
+                              </div>
+                              <ul>
+                                  <li>
+                                      <a href="#">About us</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Services</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Projects</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Our Team</a>
+                                  </li>
+                              </ul>
+                              <ul>
+                                  <li>
+                                      <a href="#">Contact us</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Blog</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Testimonials</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Faq</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <!-- End Footer Widget -->
+                      </div>
+                      <!-- End col -->
+                      <div class="col-md-12 col-lg-6">
+                          <div class="footer-widget">
+                              <div class="section-heading">
+                                  <h3>Subscribe</h3>
+                                  <span class="animate-border border-black"></span>
+                              </div>
+                              <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                              Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                              <form action="#">
+                                  <div class="form-row">
+                                      <div class="col dk-footer-form">
+                                          <input type="email" class="form-control" placeholder="Email Address">
+                                          <button type="submit">
+                                              <i class="fa fa-send"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </form>
+                              <!-- End form -->
+                          </div>
+                          <!-- End footer widget -->
+                      </div>
+                      <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+              </div>
+              <!-- End Col -->
+          </div>
+          <!-- End Widget Row -->
+      </div>
+      <!-- End Contact Container -->
+
+
+      <div class="copyright">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <span>Copyright © 2022, All Rights Reserved </span>
+                  </div>
+                  <!-- End Col -->
+                  <div class="col-md-6">
+                      <div class="copyright-menu">
+                          <ul>
+                              <li>
+                                  <a href="#">Home</a>
+                              </li>
+                              <li>
+                                  <a href="#">Terms</a>
+                              </li>
+                              <li>
+                                  <a href="#">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#">Contact</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End col -->
+              </div>
+              <!-- End Row -->
+          </div>
+          <!-- End Copyright Container -->
+      </div>
+      <!-- End Copyright -->
+      <!-- Back to top -->
+      <div id="back-to-top" class="back-to-top">
+          <button class="btn btn-dark" title="Back to Top" style="display: block;">
+              <i class="fa fa-angle-up"></i>
+          </button>
+      </div>
+      <!-- End Back to top -->
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </body>
+</html>

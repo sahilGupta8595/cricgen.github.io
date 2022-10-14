@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CricGen</title>
+    <link rel="shortcut icon" href="images/titlelogo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teams.css">
+</head>
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <header>
+      <nav class="navbar1">
+        <ul class="navbox">
+            <li>
+                <img class="logoimg" src="images/logo.jpeg" alt="">
+            </li>
+            <li>
+                <a href="#livescore" target="_blank">Live Score</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#schedule" >Schedule</a>
+            </li>
+            <li>
+                <a href="teams.html" target="_blank">Teams</a>
+            </li>
+            <li>
+                <a href="#videos">Videos</a>
+            </li>
+            <li>
+                <!-- <a href="#ranking">Ranking</a> -->
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Ranking</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#teams" class="teamranking">ICC Teams Ranking</a>
+                    <a href="#batting">ICC Batting Ranking</a>
+                    <a href="#bowling">ICC Bowling Ranking</a>
+                  </div>
+                </div>
+                
+            </li>
+            <li>
+                <a href="#dk-footer">About Us</a>
+            </li>
+            <li>
+              <a href="#loginform">Login/Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+    
+  
+    </header>
+    
+    <div class="teams">
+        <h2 class="teamsheading">Teams</h2>
+        <br>
+        <div id="team1">
+          <div class="head">
+            <div class="countryimg">
+            <img id="logo" text-align="left" src="https://img.cricketnmore.com/uploads/2018/06/Cricket-Australia2.jpg" alt="Indian Flag Clip Art - India Cricket Team Flag Png@pngkey.com" width="300" height="200">
+          </div>
+    <br>
+    <div class="countrydetail">
+    <h1 id="name"><u>Australia Cricket Team</u></h1>
+      <br>
+      <h4>Captain :Aaron Finch</h4>  
+      <br>
+      <h4>Vice-Captian :Pat Cummins</h4>
+    </div>
+  </div>
+  
+  <hr style="width: 50;">
+  <p id="squad">Australia have put forward the squad to defend the ICC Men’s T20 World Cup crown, adding the firepower of a late-over specialist.
+  
+    In the biggest news surrounding the group, Tim David has been picked by the Australian selectors, formally completing the switch from Associate Member Singapore.
+    
+    The selection of the hard-hitting all-rounder is the only change from Australia’s all-conquering 2021 T20 World Cup group, replacing spinner Mitch Swepson to give Aaron Finch another option with the bat.
+    The 26-year-old has been a revelation on the domestic scene, making waves for his power with the bat in death-over situations. The addition of David is a boon for the Australians, who go into the tournament as one of the favourites on home soil.
+  </p>
+  <div>
+    <img id="teampic" src="https://resources.pulse.icc-cricket.com/photo-resources/2022/08/31/fd543d03-bf5a-4825-9a1e-73b1d9c033b3/GettyImages-1353256236.jpg?width=1920&height=1080" width="1000" height="550">
+  <br>
+  <p id="squad">Australia’s campaign begins in Sydney on October 22 when they take on trans-Tasman rivals New Zealand at the SCG.
+  
+    The pair met in the 2021 final, 
+    where all-rounder Mitch Marsh stole the show with a 50-ball 77* in an eight-wicket win in Dubai.</p>
+  <h3 id="squad"><b> Upcoming world cup squad</b> : Aaron Finch (c), Ashton Agar, Pat Cummins, Tim David, Josh Hazlewood, Josh Inglis, Mitchell Marsh, Glenn Maxwell, Kane Richardson, Steven Smith, 
+    Mitchell Starc, Marcus Stoinis, Matthew Wade, David Warner, Adam Zampa.</h3>
+     <br>
+     <h2 id="squad"><u>IN THE T20 WORLD CUP TILL NOW</u></h2>
+        <br>
+        <h3 id="squad" ><b>Matches Played :</b> 36</h3>
+        <h3 id="squad"><b >Matches Won :</b> 22</h3>
+        <h3 id="squad"><b> Matches loss</b> :14</h3>
+        <h3 id="squad"><b >Not Result or Tie</b> : 0</h3>
+        <h3 id="squad"><b>Winning Percentage</b> : 61.11</h3>
+        <h3 id="squad"><b>Champions of </b> : 2021</h3>
+        <canvas id="myChart" style="width:100%;max-width:600px;margin-left: 25%;margin-bottom: 40px;"></canvas>
+  </div>
+        </div>
+
+        <hr>
+
+        <div class="head">
+            <div>
+            <img id="logo" text-align="left" src="https://www.pngkey.com/png/detail/247-2477887_indian-flag-clip-art-india-cricket-team-flag.png" alt="Indian Flag Clip Art - India Cricket Team Flag Png@pngkey.com" width="300" height="200">
+    <br>
+</div>
+<div>
+    <h1 id="name"><u>Indian National Cricket Team</u></h1>
+      <br>
+      <h4>Captain :Rohit Sharma</h4>  
+      <br>
+      <h4>Vice-Captian :KL Rahul</h4>
+    </div>
+</div>
+<p id="squad">India have been dealt a massive blow going into the ICC Men's T20 World Cup 2022 with Jasprit Bumrah ruled out of the tournament with a back injury.
+
+    All the squads for ICC Men's T20 World Cup 2022
+    The 28-year-old had picked up a back injury earlier last month, which had ruled him out of the Asia Cup. He returned for the three-match T20I series against Australia, which India won 2-1, and picked up a wicket in two matches.
+    
+    He was also named part of India's squad for the subsequent white-ball series against South Africa, but he did not play the first T20I in Thiruvananthapuram after he complained of backache. The decision was taken following a detailed assessment after he was ruled out of the South Africa T20Is.
+</p>
+<hr style="width: 50;">
+<div>
+    <img id="teampic" src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/10/19/1001444-world-t20-2007.jpg" width="1000" height="550">
+  <br>
+  <p id="squad">Watson, though, chose Mohammed Siraj as someone who could potentially replace Bumrah.
+
+    "For me the player I would put in if Jasprit’s not available is Mohammad Siraj. Because of the firepower he presents, that’s one thing that the bowlers with India don’t necessarily have that firepower on Australian wickets on the bigger grounds with the pace and bounce.
+    
+    "Siraj is great with the brand new ball. He’s fast, he swings the ball away but also his defensive skills are pretty good as well. And he’s got better over the last couple of years, with what we’ve seen in the IPL. So, for me he’s probably gonna be the one who is gonna have the most impact."</p>
+ <h3 id="squad"><b> Upcoming world cup squad</b> :Rohit Sharma (c), KL Rahul, Virat Kohli, Suryakumar Yadav, Deepak Hooda, Rishabh Pant, Dinesh Karthik, Hardik Pandya, R Ashwin, Yuzvendra Chahal, Axar Patel,
+     Bhuvneshwar Kumar, Harshal Patel, Arshdeep Singh.</h3>
+     <br>
+     <h3 id="squad"><b> Standby Players</b>: Mohammad Shami, Shreyas Iyer, 
+        Ravi Bishnoi, Deepak Chahar.</h3>
+        <br>
+        <h2 id="squad"><u>IN THE T20 WORLD CUP TILL NOW</u></h2>
+        <h3 id="squad" ><b>Matches Played :</b> 38</h3>
+        <h3 id="squad"><b >Matches Won :</b> 23</h3>
+        <h3 id="squad"><b> Matches loss</b> :13</h3>
+        <h3 id="squad"><b >Not Result or Tie</b> : 2</h3>
+        <h3 id="squad"><b>Winning Percentage</b> : 63.51</h3>
+        <h3 id="squad"><b>Champions of:</b>2007</h3>
+        <canvas id="myChart" style="width:100%;max-width:600px;margin-left: 25%;margin-bottom: 40px;"></canvas>
+</div>
+
+        <hr>
+
+        <div class="head">
+            <div>
+            <img id="logo" text-align="left" src="https://www.downwithdesign.com/wp-content/uploads/2010/06/ecb-logo.jpg"  width="300" height="200">
+    <br>
+</div>
+<div>
+    <h1 id="name"><u>England Cricket Team</u></h1>
+      <br>
+      <h4>Captain :Jos Buttler</h4>  
+      <br>
+      <h4>Vice-Captian :Ben Stokes</h4>
+    </div>
+</div>
+<p id="squad">England have named their 15-member squad for the upcoming ICC Men's T20 World Cup 2022, commencing 16 October, in Australia.
+
+    After a poor run for his national team and in The Hundred, Jason Roy misses out from the 15-man group, with England preferring Phil Salt, who made his T20I debut earlier this year. 
+    Since the last edition of the T20 World Cup in 2021 in the UAE, Roy has featured in 11 T20Is, scoring 206 runs at 18.72.Salt's selection is a reward for strong domestic form, in the ongoing tournament The Hundred. He is among the top run-getters, currently at No.2 with 313 runs in eight games, averaging 44.71.
+
+    Jos Buttler leads the team in his first global tournament as captain, taking over from Eoin Morgan, who retired from international cricket earlier in the year.</p>
+<hr style="width: 50;">
+<div>
+    <img id="teampic" src="https://resources.pulse.icc-cricket.com/photo-resources/2022/09/02/c384092c-f6ef-4124-a9c5-c476c726ac39/GettyImages-1236479522.jpg?width=1920&height=1080" width="1000" height="550">
+  <br>
+  <p id="squad">Buttler is currently sidelined with a calf injury, meaning Moeen Ali will lead the side for England’s preparatory tour to Pakistan, where they will play Babar Azam’s side in seven T20Is.
+
+    England are confident Buttler will regain fitness in the latter stages of the series against Pakistan.
+    
+    Dawid Malan also earns a recall after performing in England’s recent series against South Africa. The left-hander has a strike rate of 148.27 in T20Is this year, and is the like-for-like replacement for Morgan. He is also the current leading run-scorer of The Hundred with 358 runs at 59.66.</p>
+ <h3 id="squad"><b> Upcoming world cup squad</b> Jos Buttler (c), Moeen Ali, Harry Brook, Sam Curran, Chris Jordan, Liam Livingstone, Dawid Malan, Adil Rashid, 
+    Phil Salt, Ben Stokes, Reece Topley, David Willey, Chris Woakes, Mark Wood, Alex Hales.</h3>
+     <br>
+     <h3 id="squad"><b>Standby Players:</b> Liam Dawson, Richard Gleeson, Tymal Mills.</h3>
+     <br>
+     <h2 id="squad"><u>IN THE T20 WORLD CUP TILL NOW</u></h2>
+        <br>
+        <h3 id="squad" ><b>Matches Played :</b> 38</h3>
+        <h3 id="squad"><b >Matches Won :</b> 19</h3>
+        <h3 id="squad"><b> Matches loss</b> :18</h3>
+        <h3 id="squad"><b >Not Result or Tie</b> : 1</h3>
+        <h3 id="squad"><b>Winning Percentage</b> : 51.35</h3>
+        <h3 id="squad"><b>Champions of </b> : 2010</h3>
+        <canvas id="myChart" style="width:100%;max-width:600px;margin-left: 25%;margin-bottom: 40px;"></canvas>
+</div>
+        <hr>
+
+        <div class="head">
+            <div>
+            <img id="logo" text-align="left" src="https://srilankacricket.lk/wp-content/uploads/2019/07/SLC-Cricket-Logo-Web2.jpg"  width="300" height="200">
+    <br>
+</div>
+<div>
+    <h1 id="name"><u>Srilanka Cricket Team</u></h1>
+      <br>
+      <h4>Captain :Dasun Shanuka</h4>  
+      <br>
+      <h4>Vice-Captian :Bhanuka Rajapaksa</h4>
+    </div>
+    </div>
+<p id="squad">Sri Lanka, recent Asia Cup champions, have named their squad for the ICC Men's T20 World Cup 2022 with a couple of injury concerns in the list of 15.
+
+    Sri Lanka have named Dushmantha Chameera and Lahiru Kumara in the 15-member squad for the ICC Men's T20 World Cup 2022, but their participation will be subject to their fitness ahead of the tournament.
+    Most of the players from the Asia Cup 2022 feature in the T20 World Cup squad. The ones to miss out on both the main squad and reserve group are Matheesha Pathirana, who made his debut at the Asia Cup, Nuwan Thushara and Asitha Fernando.
+
+    Dinesh Chandimal, the veteran middle-order batter, who made a return to the T20I squad in the Asia Cup, only finds a place in the list of standby players.
+    
+    The impressive left-arm quick Dilshan Madushanka retains his place in the squad after a great outing in the UAE. Dhananjaya de Silva and Jeffrey Vandersay retain their places after coming in for the Asia Cup.
+</p>
+<hr style="width: 50; color: black;">
+<div>
+    <img id="teampic" src="images/2014.jpg" width="1000" height="550">
+  <br>
+  <p id="squad">Key fast bowler Chameera's ankle injury hasn’t healed completely and his return will depend on his fitness in a month's time. Despite his and Lahiru Kumara's doubtful participation, the squad has several pace options, with Madushanka, Pramod Madushan and Chamika Karunaratne named in the list.</p>
+ <h3 id="squad"><b> Upcoming world cup squad</b> : Dasun Shanaka (c), Danushka Gunathilaka, Pathum Nissanka, Kusal Mendis, Charith Asalanka, Bhanuka Rajapaksa, Dhananjaya de Silva, Wanindu Hasaranga, Maheesh Theekshana,
+     Jeffrey Vandersay, Chamika Karunaratne, Dushmantha Chameera (subject to fitness), Lahiru Kumara (subject to fitness), Dilshan Madushanka, Pramod Madushan</h3>
+     <br>
+     <h3 id="squad"><b>Standby Players:</b> Ashen Bandara, Praveen Jayawickrema, Dinesh Chandimal, Binura Fernando, Nuwanidu Fernando.</h3>
+     <br>
+     <h2 id="squad"><u>IN THE T20 WORLD CUP TILL NOW</u></h2>
+        <br>
+        <h3 id="squad" ><b>Matches Played :</b> 43</h3>
+        <h3 id="squad"><b >Matches Won :</b> 27</h3>
+        <h3 id="squad"><b> Matches loss</b> :15</h3>
+        <h3 id="squad"><b >Not Result or Tie</b> : 1</h3>
+        <h3 id="squad"><b>Winning Percentage</b> : 63.95</h3>
+        <h3 id="squad"><b>Champions of </b> : 2014</h3>
+        <canvas id="myChart" style="width:100%;max-width:600px;margin-left: 25%;margin-bottom: 40px;"></canvas>
+</div>
+
+      </div>
+
+      <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/titlelogo.png" class="sizing" alt="footer_logo" class="img-fluid sizing">
+                        </a>
+                        <p class="footer-info-text">
+                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/tushar-arora-20022001" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/aroratushar346?igshid=YmMyMTA2M2Y=" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>CricGen 2022</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>BPIT Rithala</h3>
+                                    <!-- <p>5353 Road Avenue</p> -->
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>93116 3394</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+  
+  
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2022, All Rights Reserved </span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
+  </footer>
+  
+  
+    <!-- <script src="srcipt.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="austaliapiechart.js"></script>
+    <script src="piechart.js"></script>
+    <script src="englandpiechart.js"></script>
+    <script src="srilankapiechart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

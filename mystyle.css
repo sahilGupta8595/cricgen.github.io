@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+  background-color: #023e8a;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+header{
+    width:100%;
+    height:5rem;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li a:active{
+  color:brown;
+}
+
+/* .navbar{
+    border: 2px solid red;
+} */
+.navbar1{
+  width:100%;
+  position:fixed;
+  top:0;
+}
+
+
+.navbox{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: black;
+    height:5rem;
+    padding-right:1rem;
+}
+
+.navbox a{
+    color:#fefae0;
+
+}
+
+.navbox a:hover{
+    color: #adb5bd;
+}
+
+.logoimg{
+    width:6em;
+    height:4rem;
+    filter:invert(100%);
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: #fefae0;
+    padding: 16px;
+    font-size: 16px;
+    font-weight:bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    color:#6c757d;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Ch
+  ange color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+ .main{
+  /* border:2px solid red; */
+    width:100%;
+    height:405vh;
+    background-color:#03045e;
+}
+
+.main .cover_video{
+    width:100vw;
+    height:88vh;
+}
+
+.schedule{
+    display: block;
+    width:100%;
+    height:375vh; 
+    /* border:2px solid black; */
+    
+     color:white;
+}
+
+
+.row{
+    display: flex;
+    /* border:2px solid black; */
+    justify-content: space-between;
+    margin:1rem;
+    
+}
+
+
+.box{
+    width:25vw;
+    height:25vh;
+    /* border:2px solid red; */
+}
+
+.matches{
+  /* border:2px solid red; */
+  width:20vw;
+  height:20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flagimg{
+  width:5vw;
+  height:7vh;
+}
+
+.img1{
+  width:5vw;
+  height:7vh;
+  /* border:2px solid orange; */
+}
+
+.img2{
+  width:5vw;
+  height:7vh;
+  /* border:2px solid orange; */
+}
+
+.boxspan{
+    width:15vw;
+    margin:auto;
+}
+
+.sizing{
+  width:6rem;
+  height:4rem;
+}
+
+.videoheading{
+  text-align: center;
+}
+
+.videoheading{
+  /* color:black; */
+  text-shadow: 1px 1px #fb5607;
+}
+
+.head{
+  margin-left: 25%;    
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: space-around;
+  /* border:2px solid red; */
+  margin:0 auto;
+  }
+  #teampic{
+      display: block;
+      margin-left:auto;
+      margin-right: auto;
+      margin-top: 40px;
+      margin-bottom: 30px;
+  }
+  #squad{
+      font-size: 21px;
+      margin-left: 100px;
+      margin-right: 100px;
+      font-family: Hind Siliguri,Arial,Helvetica Neue,Helvetica,sans-serif;
+      font-weight: 400;
+  }
+
+.teams{
+  background-color: #fff;
+}
+.teamsheading{
+  text-align: center;
+  font-weight: bold;
+  font-size:2rem;
+  text-shadow: 1px 1px red;
+  margin:2rem;
+}
+
+.textset{
+  text-align: center;
+  background-color: #fff;
+  color:black;
+}
